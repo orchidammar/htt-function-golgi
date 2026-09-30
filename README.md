@@ -175,3 +175,17 @@ calculating the mean and standard deviation.
 
 In the pooled outputs, the `batch_id` column (for example `Q23_0`) identifies
 the experiment each cell came from, and `channel_id` identifies the channel.
+
+## Repository contents
+
+This repository holds two independent analyses of huntingtin and Golgi
+structure. They share subject matter but not data, design, or code.
+
+| Path | Analysis |
+|------|----------|
+| `analyse_sub_folders.py` | Post-processing and outlier screening of per-cell Golgi morphology measurements (genotypes `KO`, `HAP40KO`, `Q23`, `Q145`). Described above. |
+| `scatter-analysis/` | Dual-channel protein scatter analysis of fluorescent microscopy images across a 2-bromopalmitate treatment and washout timecourse. See [`scatter-analysis/README.md`](scatter-analysis/README.md). |
+
+Note that "channel" means different things in the two analyses: an
+experimental genotype group above, and a fluorescence emission channel
+(C1/C2/C3) in `scatter-analysis/`.

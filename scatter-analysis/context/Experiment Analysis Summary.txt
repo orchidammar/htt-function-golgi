@@ -1,0 +1,46 @@
+﻿Experimental context: 
+
+
+There are 3 channels per image: blue, green, and red 
+1. Blue channel → represents a structure that exists in the center of all cells; so each blue structure belongs to 1 cell 
+                Note: the borders/ outlines of each cell are not visible in the images being analyzed 
+2. Green channel → represents protein X 
+3. Red channel → represents a structure within the cell (Y) 
+
+
+Under normal conditions, protein X is attached to structure Y in healthy/ untreated/ control cells 
+
+
+Hypothesis is: protein X is biologically important for maintaining the structural integrity of structure Y. This is based on previous experiments where protein X was genetically deleted and the observation was that structure Y completely splits/ scatters into fragments, losing its normal compact and continuous shape. 
+However, this can be an indirect effect of deleting protein X completely from the cell. Therefore, to prove that this is a direct role, I am keeping protein X in the cell, but using a drug to eject it out of structure Y and observing the effects. 
+
+
+Expectation is: when signals of X are no longer localized at structure Y, this will cause structure Y to scatter. And this is an effect that should get more pronounced the longer I treat the cells with the drugs. Also, this effect should be reversible when I remove the drug (i will refer to this as “recovery” samples) 
+
+
+The sample conditions used in this experiment are: 
+1. Control samples, not treated with anything, which should show good overlap of green and red signals 
+2. Samples treated for 4 hours
+3. Samples treated for 6h 
+4. 9h 
+5. 12h 
+6. 17h 
+7. 20h 
+8. 12h treatment followed by recovery 
+9. 17h treatment followed by recovery 
+10. 20h treatment followed by recovery 
+
+
+I will reproduce this experiment 3 times in total, with 20 images per condition. 
+
+
+Each condition should be clustered together from the 3 Ns. 
+
+
+The control condition should be the baseline for everything; therefore, all 9 conditions are to be compared statistically to the control. (e.g. 9h treatment causes scattering by this much compared to the normal distribution of signals seen in the control). 
+
+
+Final visualization: a graph that can show the progressive increase in scattering of the red and green signals over the different treatment durations. 
+
+
+Note: i normally see a plateau of scattering past the 12 hours, in case the data also confirms that, it should be fine. My hypothesis is the drug is no longer effective after around 15 hours.
